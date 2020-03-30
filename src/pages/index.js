@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
     <MainSection
       img={data.img.childImageSharp.fluid}
       title="I write code"
-      subtitle=""
+      subtitle="BuynLearn.com"
       mainclass="main-background"
     />
     <InfoBlock heading="About Us" />

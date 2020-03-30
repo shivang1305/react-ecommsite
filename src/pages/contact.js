@@ -11,7 +11,7 @@ const ContactPage = ({ data }) => (
     <MainSection
       img={data.img.childImageSharp.fluid}
       title="Contact Us"
-      subtitle="teamsupport@lco.co.in"
+      subtitle="teamsupport@buynlearn.co.in"
       mainclass="services-background"
     />
     <div class="row mt-5">
@@ -66,7 +66,7 @@ const ContactPage = ({ data }) => (
             </button>
           </form>
           <p class="lead mt-4">
-            You can also mail us : <a href="#">teamsupport@lco.co.in</a>
+            You can also mail us : <a href="#">teamsupport@buynlearn.co.in</a>
           </p>
         </div>
       </div>
