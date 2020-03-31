@@ -12,6 +12,7 @@ import Bundlecart from "../components/Cart/Bundlecart"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
+    <meta name="viewport" content="width=device-width" />
     <MainSection
       img={data.img.childImageSharp.fluid}
       title="Leadership and learning are indispensable to each other."

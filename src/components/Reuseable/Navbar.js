@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import Logo from "../../images/logo.png"
-import { FaCartArrowDown, FaMinusSquare } from "react-icons/fa"
+import { FaCartArrowDown, FaMinusSquare, FaSearch } from "react-icons/fa"
 
 export default class Navbar extends Component {
   state = {
@@ -54,6 +54,15 @@ export default class Navbar extends Component {
             BUYNLEARN
           </Link>
         </li>
+        <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan active-cyan-2 mt-1">
+          <FaSearch class="fas fa-search" aria-hidden="true"/>
+          <input
+            class="form-control form-control-sm ml-3 w-75"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
         <button
           className="navbar-toggler navbar-toggler-right"
           type="button"
