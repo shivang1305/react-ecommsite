@@ -3,8 +3,8 @@ import Heading from "../Reuseable/Heading"
 import Image from "gatsby-image"
 
 const getCategory = items => {
-  let holdItems = items.map(listitems => {
-    return listitems.node.category
+  let holdItems = items.map(items => {
+    return items.node.categories
   })
   let holdCategories = new Set(holdItems)
   let categories = Array.from(holdCategories)
@@ -30,7 +30,7 @@ export default class Coursescart extends Component {
       })
     } else {
       let selected_courses = allcourses.filter(
-        ({ node }) => node.category === category
+        ({ node }) => node.categories === category
       )
       this.setState(() => {
         return { mycourses: selected_courses }
@@ -43,6 +43,23 @@ export default class Coursescart extends Component {
       <section className="py-5">
         <div className="container">
           <Heading title="Courses" />
+          <div class="dropdown">
+            <button class="dropbtn">Category</button>
+            <div class="dropdown-content">
+              {this.state.mycategories.map((category, index) => {
+                return (
+                  <a
+                    key={index}
+                    onClick={() => {
+                      this.categorySelected(category)
+                    }}
+                  >
+                    {category}
+                  </a>
+                )
+              })}
+            </div>
+          </div>
           <div className="row">
             {this.state.mycourses.map(({ node }) => {
               return (

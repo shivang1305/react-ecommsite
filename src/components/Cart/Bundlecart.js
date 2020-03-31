@@ -56,6 +56,9 @@ export default class Bundlecart extends Component {
                       <h6 className="mb-0">{node.title}</h6>
                       <h6 className="mb-0 text-success">${node.price}</h6>
                     </div>
+                    <p className="text-muted">
+                      <small>{node.description.description}</small>
+                    </p>
                     <button
                       data-item-id={node.id}
                       data-item-name={node.title}

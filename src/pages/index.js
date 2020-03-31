@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <MainSection
       img={data.img.childImageSharp.fluid}
-      title="I write code"
+      title="Leadership and learning are indispensable to each other."
       subtitle="BuynLearn.com"
       mainclass="main-background"
     />
@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => (
     <DualInfoBlock
       heading="Our Team"
       source="https://images.pexels.com/photos/1261427/pexels-photo-1261427.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      msg="Just click photos"
+      msg="Keep on learning"
     />
   </Layout>
 )
@@ -62,6 +62,9 @@ export const query = graphql`
           id
           title
           price
+          description {
+            description
+          }
           image {
             fixed(height: 120, width: 200) {
               ...GatsbyContentfulFixed_tracedSVG

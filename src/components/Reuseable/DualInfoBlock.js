@@ -35,7 +35,7 @@ export default function DualInfoBlock({ heading, source, msg }) {
             <div class="card bg-dark">
               <Image source={source} />
               <div class="card-body">
-                <h5 class="card-title text-primary">{msg}</h5>
+                <h5 class="card-title text-warning">{msg}</h5>
                 <p class="card-text text-white">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Beatae modi dolore ea reprehenderit asperiores sit, eveniet
