@@ -15,12 +15,15 @@ const ContactPage = ({ data }) => (
       mainclass="services-background"
     />
     <div class="row mt-5">
-      <div class="col-md-6 m-auto">
+      <div class="col-md-8 m-auto">
         <div class="card card-body">
           <h1 class="text-center mb-3">
             <i class="fas fa-user-plus"></i> Contact Us
           </h1>
-          <form action="/users/register" method="POST">
+          <form
+            action="https://formspree.io/sharmashivang1999@gmail.com"
+            method="POST"
+          >
             <div class="form-group">
               <label for="name">Name</label>
               <input
@@ -53,7 +56,7 @@ const ContactPage = ({ data }) => (
             </div>
             <div class="form-group">
               <label for="password2">Issue</label>
-              <input
+              <textarea
                 type="text"
                 id="issue"
                 name="issue"

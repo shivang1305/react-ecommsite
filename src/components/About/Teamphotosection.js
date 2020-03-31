@@ -23,7 +23,7 @@ export default function Teamphotosection() {
                 voluptate!
               </p>
               <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Info resoures: www.buynlearn.netlify.com</small>
               </p>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function Teamphotosection() {
                 officia animi.
               </p>
               <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Info resoures: www.buynlearn.netlify.com</small>
               </p>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function Teamphotosection() {
                 nostrum doloremque natus placeat ex aliquid necessitatibus.
               </p>
               <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Info resoures: www.buynlearn.netlify.com</small>
               </p>
             </div>
           </div>

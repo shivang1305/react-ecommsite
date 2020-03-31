@@ -12,28 +12,28 @@ const getCategory = items => {
   return categories
 }
 
-export default class Coursescart extends Component {
+export default class Bundlecart extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      courses: props.courses.edges,
-      mycourses: props.courses.edges,
-      mycategories: getCategory(props.courses.edges),
+      bundles: props.bundles.edges,
+      mybundles: props.bundles.edges,
+      mycategories: getCategory(props.bundles.edges),
     }
   }
 
   categorySelected = category => {
-    let allcourses = [...this.state.courses]
+    let allbundles = [...this.state.bundles]
     if (category === "All") {
       this.setState(() => {
-        return { mycourses: allcourses }
+        return { mybundles: allbundles }
       })
     } else {
-      let selected_courses = allcourses.filter(
+      let selected_bundles = allbundles.filter(
         ({ node }) => node.category === category
       )
       this.setState(() => {
-        return { mycourses: selected_courses }
+        return { mybundles: selected_bundles }
       })
     }
   }
@@ -42,9 +42,9 @@ export default class Coursescart extends Component {
     return (
       <section className="py-5">
         <div className="container">
-          <Heading title="Courses" />
+          <Heading title="Bundles" />
           <div className="row">
-            {this.state.mycourses.map(({ node }) => {
+            {this.state.mybundles.map(({ node }) => {
               return (
                 <div
                   key={node.id}
@@ -56,15 +56,11 @@ export default class Coursescart extends Component {
                       <h6 className="mb-0">{node.title}</h6>
                       <h6 className="mb-0 text-success">${node.price}</h6>
                     </div>
-                    <p className="text-muted">
-                      <small>{node.description.description}</small>
-                    </p>
                     <button
                       data-item-id={node.id}
                       data-item-name={node.title}
                       data-item-price={node.price}
                       data-item-url="https://buynlearn.netlify.com/"
-                      data-item-description={node.description.description}
                       data-item-image={node.image.fixed.src}
                       className="btn btn-warning snipcart-add-item"
                     >

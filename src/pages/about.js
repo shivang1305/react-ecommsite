@@ -13,14 +13,14 @@ const AboutPage = ({ data }) => (
     <SEO title="Home" />
     <MainSection
       img={data.img.childImageSharp.fluid}
-      title="About LearnCodeOnline"
-      subtitle="learncodeonline.com"
+      title="About BuynLearn"
+      subtitle="buynlearn.com"
       mainclass="about-background"
     />
     <DualInfoBlock
       heading="A message from CEO"
       source="https://images.pexels.com/photos/2897883/pexels-photo-2897883.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      msg="James Madison"
+      msg="Shivang Sharma"
     />
     <InfoBlock heading="About Us" />
     <Teamphotosection />
