@@ -97,3 +97,15 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+#
+#
+
+![Home] (https://github.com/shivang1305/react-ecommsite/blob/master/Home.jpeg)
+#
+![About] (https://github.com/shivang1305/react-ecommsite/blob/master/About.jpeg)
+#
+![Courses] (https://github.com/shivang1305/react-ecommsite/blob/master/Courses.jpeg)
+#
+![Cart] (https://github.com/shivang1305/react-ecommsite/blob/master/Cart.jpeg)
+#
